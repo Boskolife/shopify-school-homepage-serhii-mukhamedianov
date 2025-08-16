@@ -1,0 +1,120 @@
+// forms
+form,
+fieldset {
+    margin: 0;
+    border-style: none;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+//input[type='url'],
+// input[type='date'],
+textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid $form-element-border-color;
+    color: $black;
+    // &:hover {
+
+    // }
+
+    &:focus {
+        border-color: $form-element-focus-border-color;
+    }
+
+    @include placeholder {
+        color: $placeholder-color;
+    }
+}
+
+input[attribute="value"] {}
+
+select {
+    -webkit-border-radius: 0;
+}
+
+textarea {
+    vertical-align: top;
+    resize: none;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='submit'] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    cursor: pointer;
+    font-family: $base-font-sans-serif;
+
+    &:hover {}
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+
+    label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        width: 100%;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            width: 48%;
+
+            @include media ("<tablet") {
+                width: 100%;
+            }
+        }
+
+        span {
+            line-height: calc(24 / 16);
+        }
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        background-color: $white;
+        border: 1px solid $lighter_gray;
+        border-radius: 8px;
+        padding: 16px;
+        box-sizing: border-box;
+        transition: all .3s ease;
+        line-height: calc(24 / 16);
+
+        &::placeholder {
+            color: $gray;
+            line-height: calc(24 / 16);
+        }
+
+        &:focus {
+            border-color: $black;
+            transition: all .3s ease;
+        }
+
+        &:active {
+            border-color: $black;
+            transition: all .3s ease;
+        }
+    }
+
+    textarea {
+        height: 152px;
+    }
+
+    .btn {
+        margin: 12px auto 0 auto;
+    }
+}

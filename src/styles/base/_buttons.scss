@@ -1,0 +1,29 @@
+.btn {
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+
+    &_black {
+        background-color: $black;
+        color: $white;
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: $gray;
+            transition: all .3s ease;
+        }
+    }
+
+    &_white {
+        background-color: $white;
+        color: $black;
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: $light_gray;
+            transition: all .3s ease;
+        }
+    }
+}

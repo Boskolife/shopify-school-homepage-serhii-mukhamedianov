@@ -1,0 +1,123 @@
+.footer {
+    padding: 60px 0 24px 0;
+
+    &_top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-bottom: 48px;
+
+        @include media ("<tablet") {
+            gap: 0;
+        }
+    }
+
+    .footer_col {
+        width: 23%;
+        border: none;
+        border-radius: 0;
+
+        &.active {
+            .footer_col__arrow {
+                rotate: 180deg;
+                transition: all .3s ease;
+            }
+        }
+
+        @include media ("<desktop") {
+            width: 48%;
+        }
+
+        @include media ("<tablet") {
+            width: 100%;
+            border-top: 1px solid $lighter_gray;
+            padding: 16px 0;
+            margin-bottom: 0 !important;
+
+            &:last-child {
+                border-bottom: 1px solid $lighter_gray;
+            }
+        }
+
+        .accordion__trigger {
+            padding: 0;
+            border: none;
+        }
+
+        &__title {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: calc(24 / 16);
+            margin-bottom: 16px;
+
+            @include media ("<tablet") {
+                margin: 0;
+            }
+        }
+
+        &__arrow {
+            display: none;
+            width: 15px;
+            height: 15px;
+            transition: all .3s ease;
+
+            @include media ("<tablet") {
+                display: block;
+            }
+        }
+
+        &__nav {
+            display: flex;
+            padding: 0;
+
+            @include media ("<tablet") {
+                padding-top: 16px;
+            }
+        }
+
+        &__menu-item {
+            &:not(:last-child) {
+                margin-bottom: 14px;
+            }
+        }
+
+        &__menu-link {
+            font-size: 14px;
+            color: $gray;
+            line-height: calc(20 / 14);
+            transition: color .3s ease;
+
+            &:hover {
+                color: $black;
+                transition: color .3s ease;
+            }
+        }
+    }
+
+    &_bottom {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px 32px;
+
+        @include media ("<phone") {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        a,
+        p {
+            font-size: 14px;
+            color: $gray;
+            line-height: calc(20 / 14);
+            transition: color .3s ease;
+
+            &:hover {
+                color: $black;
+                transition: color .3s ease;
+            }
+        }
+    }
+}

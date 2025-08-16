@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test for Developer</title>
+  <link rel="stylesheet" href="/styles/main.scss">
+  <script type="module" src="/js/main.js" defer></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    {{> header }}
+    <main>
+      <section class="hero">
+        <div class="swiper hero_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="hero_slide">
+                <img class="hero_slide__img" title="nike logo" src="./images/hero/slide_1.png"
+                  alt="image not found">
+                <div class="hero_slide__content">
+                  <h2 class="hero_slide__title">More than just shoes — it’s a part of your story.</h2>
+                  <p class="hero_slide__text">Original sneakers from Nike and other top brands that
+                    make every step feel special.</p>
+                  <button class="hero_slide__btn btn btn_white">Shop the Collection</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero_slide">
+                <img class="hero_slide__img" title="girl in shoes" src="./images/hero/slide_2.png"
+                  alt="image not found">
+                <div class="hero_slide__content">
+                  <h2 class="hero_slide__title">More than just shoes — it’s a part of your story.</h2>
+                  <p class="hero_slide__text">Original sneakers from Nike and other top brands that
+                    make every step feel special.</p>
+                  <button class="hero_slide__btn btn btn_white">Shop the Collection</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero_slide">
+                <img class="hero_slide__img" title="shoes" src="./images/hero/slide_3.png"
+                  alt="image not found">
+                <div class="hero_slide__content">
+                  <h2 class="hero_slide__title">More than just shoes — it’s a part of your story.</h2>
+                  <p class="hero_slide__text">Original sneakers from Nike and other top brands that
+                    make every step feel special.</p>
+                  <button class="hero_slide__btn btn btn_white">Shop the Collection</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="featured-collection default-section">
+        <div class="container">
+          <h2 class="featured-collection_title section-title">Featured Collection</h2>
+        </div>
+        <div class="featured-collection_content">
+          <div class="swiper featured-collection_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="featured-collection_slide">
+                  <a href="#" target="_blank" class="featured-collection_slide__img">
+                    <img src="./images/featured-collection/image.png" alt="image not found">
+                  </a>
+                  <a href="#" target="_blank" class="featured-collection_slide__title">Nike Streakfly
+                    2</a>
+                  <span class="featured-collection_slide__price">$300.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="featured-collection_slide">
+                  <a href="#" target="_blank" class="featured-collection_slide__img">
+                    <img src="./images/featured-collection/image-1.png" alt="image not found">
+                  </a>
+                  <a href="#" target="_blank" class="featured-collection_slide__title">Nike Pegasus
+                    Premium</a>
+                  <span class="featured-collection_slide__price">$350.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="featured-collection_slide">
+                  <a href="#" target="_blank" class="featured-collection_slide__img">
+                    <img src="./images/featured-collection/image-2.png" alt="image not found">
+                  </a>
+                  <a href="#" target="_blank" class="featured-collection_slide__title">Nike Pegasus
+                    41</a>
+                  <span class="featured-collection_slide__price">$280.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="featured-collection_slide">
+                  <a href="#" target="_blank" class="featured-collection_slide__img">
+                    <img src="./images/featured-collection/image-3.png" alt="image not found">
+                  </a>
+                  <a href="#" target="_blank" class="featured-collection_slide__title">Nike Revolution
+                    7</a>
+                  <span class="featured-collection_slide__price">$440.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="featured-collection_slide">
+                  <a href="#" target="_blank" class="featured-collection_slide__img">
+                    <img src="./images/featured-collection/image.png" alt="image not found">
+                  </a>
+                  <a href="#" target="_blank" class="featured-collection_slide__title">Nike Streakfly
+                    2</a>
+                  <span class="featured-collection_slide__price">$300.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="featured-collection_slide">
+                  <a href="#" target="_blank" class="featured-collection_slide__img">
+                    <img src="./images/featured-collection/image-1.png" alt="image not found">
+                  </a>
+                  <a href="#" target="_blank" class="featured-collection_slide__title">Nike Pegasus
+                    Premium</a>
+                  <span class="featured-collection_slide__price">$350.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="featured-collection_slide">
+                  <a href="#" target="_blank" class="featured-collection_slide__img">
+                    <img src="./images/featured-collection/image-2.png" alt="image not found">
+                  </a>
+                  <a href="#" target="_blank" class="featured-collection_slide__title">Nike Pegasus
+                    41</a>
+                  <span class="featured-collection_slide__price">$280.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="featured-collection_slide">
+                  <a href="#" target="_blank" class="featured-collection_slide__img">
+                    <img src="./images/featured-collection/image-3.png" alt="image not found">
+                  </a>
+                  <a href="#" target="_blank" class="featured-collection_slide__title">Nike Revolution
+                    7</a>
+                  <span class="featured-collection_slide__price">$440.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev">
+            <img class="swiper-button-arrow" src="./images/arrow.svg" alt="image not found">
+          </div>
+          <div class="swiper-button-next">
+            <img class="swiper-button-arrow" src="./images/arrow.svg" alt="image not found">
+          </div>
+        </div>
+      </section>
+      <section class="faq default-section">
+        <div class="container">
+          <h2 class="faq_title section-title">Frequently asked questions</h2>
+          <p class="faq_descr">Answers to our most frequently asked questions are just one click away.
+          </p>
+          <div class="faq_content">
+            <div class="accordion">
+              <div class="accordion__item">
+                <div class="accordion__trigger">
+                  <span class="accordion__trigger-title">What are Nike's delivery options?</span>
+                  <div class="accordion__trigger-open-status"></div>
+                </div>
+                <div class="accordion__content">
+                  <p>
+                    When you shop Nike online, either in the Nike App or on Nike.com, you can return
+                    items that are unworn and unwashed and still have their product tags attached
+                    within
+                    30 days of purchase (some exceptions apply). That includes custom Nike By You
+                    sneakers.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__trigger">
+                  <span class="accordion__trigger-title">What is Nike's returns policy??</span>
+                  <div class="accordion__trigger-open-status"></div>
+                </div>
+                <div class="accordion__content">
+                  <p>
+                    When you shop Nike online, either in the Nike App or on Nike.com, you can return
+                    items that are unworn and unwashed and still have their product tags attached
+                    within
+                    30 days of purchase (some exceptions apply). That includes custom Nike By You
+                    sneakers.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__trigger">
+                  <span class="accordion__trigger-title">Where is my Nike order?</span>
+                  <div class="accordion__trigger-open-status"></div>
+                </div>
+                <div class="accordion__content">
+                  <p>
+                    When you shop Nike online, either in the Nike App or on Nike.com, you can return
+                    items that are unworn and unwashed and still have their product tags attached
+                    within
+                    30 days of purchase (some exceptions apply). That includes custom Nike By You
+                    sneakers.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__trigger">
+                  <span class="accordion__trigger-title">How do I find the right size and fit?</span>
+                  <div class="accordion__trigger-open-status"></div>
+                </div>
+                <div class="accordion__content">
+                  <p>
+                    When you shop Nike online, either in the Nike App or on Nike.com, you can return
+                    items that are unworn and unwashed and still have their product tags attached
+                    within
+                    30 days of purchase (some exceptions apply). That includes custom Nike By You
+                    sneakers.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product default-section">
+        <div class="container">
+          <div class="product_content">
+            <div class="product_gallery">
+              <div class="swiper product-swiper-thumbs">
+                <div class="swiper-wrapper"></div>
+              </div>
+              <div class="swiper product-swiper-main">
+                <div class="product_label">
+                  <img src="./images/star.svg" alt="star">
+                  <span>Highly Rated</span>
+                </div>
+                <div class="swiper-wrapper"></div>
+              </div>
+            </div>
+            <div class="product_info">
+              <div class="product_info__head">
+                <h2 class="product_name section-title">Nike Air Max Plus</h2>
+                <span class="product_price">$280.00</span>
+              </div>
+              <div class="product_info__choose choose_color">
+                <button class="product_info__choose-btn color-btn" data-color="color1">
+                  <img src="./images/product/image_1.png" alt="Nike Air Max Plus color 1 preview">
+                </button>
+                <button class="product_info__choose-btn color-btn" data-color="color2">
+                  <img src="./images/product/image_7.png" alt="Nike Air Max Plus color 2 preview">
+                </button>
+                <button class="product_info__choose-btn color-btn" data-color="color3">
+                  <img src="./images/product/image_11.png" alt="Nike Air Max Plus color 3 preview">
+                </button>
+              </div>
+              <div class="product_info__choose choose_size">
+                <span class="choose_tip">Select Size:</span>
+                <div class="product_info__choose-body">
+                  <button class="product_info__choose-btn size-btn" data-size="5.5">UK 5.5</button>
+                  <button class="product_info__choose-btn size-btn" data-size="6">UK 6 (EU
+                    39)</button>
+                  <button class="product_info__choose-btn size-btn" data-size="6-40">UK 6 (EU
+                    40)</button>
+                  <button class="product_info__choose-btn size-btn" data-size="6.5">UK 6.5</button>
+                  <button class="product_info__choose-btn size-btn" data-size="7">UK 7</button>
+                  <button class="product_info__choose-btn size-btn" data-size="7.5">UK 7.5</button>
+                </div>
+              </div>
+  
+              <button type="button" aria-label="add product to bag" class="btn btn_black">Add to
+                Bag</button>
+              <div class="product_info__description">Let your attitude have the edge in your Nike Air
+                Max Plus, a Tuned Air experience that offers premium stability and unbelievable
+                cushioning. </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact default-section">
+        <div class="container">
+          <h2 class="contact_title section-title">Need help?</h2>
+          <form action="#" method="post" class="contact_form form">
+            <label for="name">
+              <span>Name</span>
+              <input type="text" id="name" name="name" placeholder="Enter name" required
+                autocomplete="additional-name" aria-required="true">
+            </label>
+  
+            <label for="phone">
+              <span>Number</span>
+              <input type="tel" id="phone" name="phone" placeholder="Enter number" inputmode="tel"
+                required autocomplete="tel" aria-required="true">
+            </label>
+  
+            <label for="mail">
+              <span>Email</span>
+              <input type="email" id="mail" name="email" placeholder="Enter email" required
+                autocomplete="email" aria-required="true">
+            </label>
+  
+            <label for="message">
+              <span>Message</span>
+              <textarea id="message" name="message" placeholder="Enter your message"
+                required></textarea>
+            </label>
+  
+            <button type="submit" aria-label="send form data" class="btn btn_black">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    {{> footer }}
+    {{> offer-popup}}
+  </div>
+</body>
+
+</html>
